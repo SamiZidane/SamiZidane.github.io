@@ -31,14 +31,14 @@ h2{font-size:clamp(36px,5vw,62px);line-height:1.03;letter-spacing:-.038em;margin
 .poster-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}.poster{border:1px solid var(--paperline);border-radius:18px;padding:24px;background:#fff;min-height:220px;display:flex;flex-direction:column;box-shadow:0 8px 24px rgba(20,45,55,.045)}.poster .type{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#768184}.poster h3{font-size:22px;line-height:1.15;margin:16px 0 12px}.poster p{font-size:14px;color:#5b6668}.poster .grow{flex:1}
 .residency{border:1px solid rgba(120,216,232,.18);border-radius:26px;padding:44px;background:linear-gradient(145deg,#0d1d25,#09141a 62%,#0b171c);box-shadow:var(--shadow)}.residency h2{margin-top:0}.residency ul{columns:2;padding-left:20px;color:#c4ced0}
 footer{padding:42px 0;color:#8e999b;font-size:13px;border-top:1px solid rgba(255,255,255,.06)}.small{font-size:13px;color:var(--muted)}
-.featured-photo{display:grid;grid-template-columns:.9fr 1.1fr;gap:26px;align-items:stretch;margin:34px 0 38px}
-.featured-photo-card{border:1px solid var(--paperline);border-radius:22px;background:#fff;overflow:hidden;box-shadow:0 12px 34px rgba(20,45,55,.07)}
-.featured-photo-card img{display:block;width:100%;height:100%;object-fit:cover;min-height:390px}
+.featured-photo{display:grid;grid-template-columns:1.08fr .92fr;gap:30px;align-items:start;margin:34px 0 40px}
+.featured-photo-card{border:1px solid var(--paperline);border-radius:22px;background:#fff;overflow:hidden;box-shadow:0 12px 34px rgba(20,45,55,.07)}.featured-photo-card.photo-image{background:#f3f7f8;padding:14px}
+.featured-photo-card img{display:block;width:100%;height:auto;object-fit:contain;min-height:0;max-height:760px;margin:0 auto}
 .featured-photo-copy{padding:30px}
 .featured-photo-copy h3{font-size:29px;line-height:1.12;margin:0 0 14px;letter-spacing:-.025em}
 .featured-photo-copy p{color:#4e5a5d;margin:0 0 14px}
 .featured-caption{font-size:13px;color:#637175;margin-top:14px}
-@media(max-width:850px){.featured-photo{grid-template-columns:1fr}.featured-photo-card img{min-height:280px}.featured-photo-copy{padding:22px}}
+@media(max-width:850px){.featured-photo{grid-template-columns:1fr}.featured-photo-card img{max-height:none}.featured-photo-copy{padding:22px}}
 @media(max-width:850px){.hero-grid,.split{grid-template-columns:1fr}.grid,.poster-grid,.expertise{grid-template-columns:1fr}.links{display:none}.hero{min-height:auto}.hero-grid{padding:90px 0}.trow{grid-template-columns:1fr;gap:5px}.residency ul{columns:1}}
 </style>
 </head>
@@ -51,7 +51,7 @@ footer{padding:42px 0;color:#8e999b;font-size:13px;border-top:1px solid rgba(255
 <section id="research" class="section light"><div class="wrap"><div class="eyebrow">03 / Research</div><h2>Structured, quantitative imaging research.</h2><div class="grid"><div class="card"><h3>Structured Thoracic Radiographic Scoring System (STRS)</h3><p>Standardization of thoracic radiographic interpretation in dogs and cats using quantitative measurements and structured scoring.</p></div><div class="card"><h3>US-DTA</h3><p>Development of a structured cognitive decision-tree algorithm for veterinary ultrasonography: Acquire–Search–Characterise–Integrate–Differentiate–Check–Act.</p></div><div class="card"><h3>3D Radius/Ulna Planning</h3><p>CT-based 3D reconstruction, angular quantification, virtual correction and preoperative planning for angular limb deformity.</p></div><div class="card"><h3>Post-FHO Structured Assessment</h3><p>Structured postoperative radiographic assessment in dogs following femoral head and neck ostectomy, including reproducibility and functional outcome association.</p></div></div></div></section>
 <section id="posters" class="section light"><div class="wrap"><div class="eyebrow">04 / Scientific Output</div><h2>Presentations, posters and publications.</h2>
 <div class="featured-photo">
-  <div class="featured-photo-card">
+  <div class="featured-photo-card photo-image">
     <img src="ivra-fukuoka-poster.jpg" alt="Dr. Sami Zidane at IVRA 2026 in Fukuoka, Japan, beside his scientific poster on canine thoracic imaging."/>
   </div>
   <div class="featured-photo-card featured-photo-copy">
